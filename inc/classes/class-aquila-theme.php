@@ -1,5 +1,5 @@
 <?php
-// Bootstraps the Theme.
+// Main theme class.
 
 // @package Aquila.
 
@@ -15,6 +15,8 @@ class AQUILA_THEME
     {
         //load class
         Assets::get_instance();
+        Menus:: get_instance();
+
 
         $this->setup_hooks();
     }
@@ -43,5 +45,35 @@ class AQUILA_THEME
             'default-image' => '',
             'default-repeat' => 'no-repeat',
         ]);
+
+        add_theme_support('post-thumbnails');
+
+        add_theme_support('customize-selective-refresh-widgets');
+
+        add_theme_support('automatic-feed-links');
+
+        add_theme_support(
+            'html5',
+            [
+                'comment-list',
+                'comment-form',
+                'search-form',
+                'gallery',
+                'caption',
+                'style',
+                'script'
+            ]
+        );
+
+        add_editor_style();
+
+        add_theme_support('wp-block-styles');
+
+        add_theme_support('align-wide');
+
+        global $content_width;
+        if( ! isset($content_width)) {
+            $content_width = 1234;
+        }
     }
 }
