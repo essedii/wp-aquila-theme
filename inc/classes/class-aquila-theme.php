@@ -75,5 +75,9 @@ class AQUILA_THEME
         if( ! isset($content_width)) {
             $content_width = 1234;
         }
+
+        add_theme_support( 'post-thumbnails' );
+
+        add_image_size( 'featured-thumbnail', 350, 233, true );
     }
 }
