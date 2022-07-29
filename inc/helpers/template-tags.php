@@ -69,15 +69,28 @@ function aquila_the_excerpt($trim_character_count = 0)
     echo $excerpt . '[...]';
 }
 
+function aquila_posted_by()
+{
+    $byline = sprintf(
+        esc_html_x('by %s', 'post author', 'aquila'),
+        '<span class"author vcard">
+            <a href="' . esc_url(get_author_posts_url(get_the_author_meta('ÍD'))) . '">' . esc_html(get_the_author()) . '</a>
+        </span>'
+    );
+    echo '<span class="byline text-secondary">' . $byline . '</span>';
+}
 
-function aquila_excerpt_more( $more = '' ) {
 
-	if ( ! is_single() ) {
-		$more = sprintf( '<a class="aquila-read-more text-white mt-3 btn btn-info" href="%1$s">%2$s</a>',
-			get_permalink( get_the_ID() ),
-			__( 'Read more', 'aquila' )
-		);
-	}
+function aquila_excerpt_more($more = '')
+{
 
-	return $more;
+    if (!is_single()) {
+        $more = sprintf(
+            '<a class="aquila-read-more text-white mt-3 btn btn-info" href="%1$s">%2$s</a>',
+            get_permalink(get_the_ID()),
+            __('Read more', 'aquila')
+        );
+    }
+
+    return $more;
 }

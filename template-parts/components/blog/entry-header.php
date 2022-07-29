@@ -1,7 +1,11 @@
 <?php
-//  Template for post entry header.
-// @package Aquila
-
+/**
+ * Template for post entry header.
+ * 
+ * To be used inside WP The Loop.
+ * 
+ * @package Aquila
+ */
 
 $the_post_id   = get_the_ID();
 $hide_title = get_post_meta($the_post_id, '_hide_page_title', true);
