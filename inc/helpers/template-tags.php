@@ -55,17 +55,18 @@ function aquila_post_on()
     echo '<span class"posted-one text-secondary">' . $posted_on . ' </span>';
 }
 
-function aquila_the_excerpt( $trim_character_count ) {
-    $excerpt = wp_strip_all_tags( get_the_excerpt() ); 
-   
-	if (strlen($excerpt) < $trim_character_count ) {
-		the_excerpt();
-		return;
-	}
+function aquila_the_excerpt($trim_character_count)
+{
+    $excerpt = wp_strip_all_tags(get_the_excerpt());
 
-	$excerpt = substr( $excerpt, 0, $trim_character_count );
-	$excerpt = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
-	echo $excerpt . ' [...]';
+    if (strlen($excerpt) < $trim_character_count) {
+        the_excerpt();
+        return;
+    }
+
+    $excerpt = substr($excerpt, 0, $trim_character_count);
+    $excerpt = substr($excerpt, 0, strrpos($excerpt, ' '));
+    echo $excerpt . ' [...]';
 }
 
 function aquila_posted_by()
@@ -92,4 +93,23 @@ function aquila_excerpt_more($more = '')
     }
 
     return $more;
+}
+
+function aquila_pagination()
+{   
+    $allowed_tags = [
+        'span' => [
+            'class' => []
+        ],
+        'a' => [
+            'class' => [],
+            'href' => [],
+        ]
+        ];
+    $args = [
+        'before_page_number' => '<span class="btn border border-secondary mr-2 mb-2">',
+        'after_page_number' =>  '</span>'
+    ];
+
+    printf( '<nav class=" aquila-pagination clearfix" >%s</nav>', wp_kses( paginate_links( $args), $allowed_tags));
 }

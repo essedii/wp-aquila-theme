@@ -10,9 +10,10 @@ get_header();
 <div id="primary">
     <main id="main" class="site-main mt-5" role='main'>
         <?php
-        if (have_posts()) :
+        if (have_posts()) {
         ?>
             <div class="container">
+
                 <?php
                 if (is_home() && !is_front_page()) {
                 ?>
@@ -23,20 +24,35 @@ get_header();
                     </header>
                 <?php
                 }
+
                 while (have_posts()) : the_post();
-
-
-                    get_template_part('template-parts/content');
-
-                endwhile;
-
                 ?>
-
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <?php
+                        get_template_part('template-parts/content'); {
+                        ?>
+                    </div>
+            <?php
+                        }
+                    endwhile;
+            ?>
+            <!-- <div class="conatiner d-flex flex-row">
+                <div class="prev-link"><?php previous_post_link(); ?></div>
+                <div class="next-link"><?php next_post_link(); ?></div>
+            </div> -->
             </div>
-        <?php
-        endif;
-        ?>
-    </main>
 </div>
+<?php } else {
+?>
+    <div class="container">
+        <?php get_template_part('template-parts/content-none'); ?>
+
+    </div>
+
+
 <?php
-get_footer();
+        }
+
+?>
+
+</main>
