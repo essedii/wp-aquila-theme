@@ -81,6 +81,6 @@ class AQUILA_THEME
 
         add_theme_support( 'post-thumbnails' );
 
-        add_image_size( 'featured-thumbnail', 350, 233, true );
+        // add_image_size( 'featured-thumbnail', 350, 233, true );
     }
 }
