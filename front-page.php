@@ -20,7 +20,7 @@ if ( $arr_posts->have_posts() ) :
     while ( $arr_posts->have_posts() ) :
         $arr_posts->the_post();
         ?>
-        <div class="col p-0 mh-auto bg-primary align-item-center"  style="  width:
+        <div class="col p-0 mh-auto bg-primary align-item-center  img-hover-zoom style="  width:
         100%;
     height:100%; "  id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <?php
@@ -28,8 +28,8 @@ if ( $arr_posts->have_posts() ) :
             if ( has_post_thumbnail() ) :
 
                 echo '<img src="'.$featured_img_url.'" 
-                style=" min-height:100%; max-width:100%; object-fit: cover;"
-                class"
+                style=" min-height:100%; max-width:100%; object-fit: cover;  object-position: 50% 50%;"
+               "
                 " >'; 
             endif;
             ?>
