@@ -1,0 +1,46 @@
+{
+  "name": "aquila",
+  "version": "1.0.0",
+  "description": "Aquila theme package",
+  "main": "main.js",
+  "scripts": {
+    "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
+    "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
+    "clean": "rm -rf build/*"
+  },
+  "keywords": [
+    "wordpress",
+    "themes"
+  ],
+  "author": "Stefano Dolci",
+  "license": "IMT",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@svgr/cli": "^6.3.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.1",
+    "cssnano": "^5.1.12",
+    "eslint": "^7.11.0",
+    "eslint-config-wordpress": "^2.0.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-jsdoc": "^30.6.4",
+    "file-loader": "^6.0.0",
+    "lodash": "^4.17.21",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "sass-loader": "^9.0.3",
+    "sass-mq": "^5.0.1",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.7.2",
+    "stylelint-config-wordpress": "^17.0.0",
+    "stylelint-webpack-plugin": "^2.1.0",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

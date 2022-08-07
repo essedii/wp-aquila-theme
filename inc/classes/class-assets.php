@@ -27,7 +27,7 @@ class Assets
     public function register_styles()
     {
         //Register Styles.
-        wp_register_style('style-css', get_stylesheet_uri(), [], filemtime(AQUILA_DIR_PATH . '/style.css'), 'all');
+        wp_register_style('style-css', get_stylesheet_uri(), ['jquery'], filemtime(AQUILA_DIR_PATH . '/style.css'), 'all');
         wp_register_style('bootstrap-css', AQUILA_DIR_URI . '/assets/src/library/css/bootstrap.min.css', [], false, 'all');
 
         //Enqueue Styles.
