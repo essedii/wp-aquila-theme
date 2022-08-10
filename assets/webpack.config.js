@@ -52,9 +52,20 @@ module.exports = (env, argv) => ({
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
-
+      {
+        test: /\.(png|jpg|svg|jpeg|gif|ico)$/,
+        exclude: /library/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[path][name].[ext]',
+            publicPath: 'production' === process.env.NODE_ENV ? '../' : '../../'
+          }
+        }
+      },
       {
         test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+
         type: "javascript/auto",
         use: [
           {

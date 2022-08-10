@@ -4,5 +4,4 @@ import './clock/index';
 import '../sass/main.scss';
 
 //images
-
 import '../img/Dune.jpg';
