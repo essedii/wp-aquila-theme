@@ -95,21 +95,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 /***/ }),
 
-/***/ "./src/img/Dune.jpg":
-/*!**************************!*\
-  !*** ./src/img/Dune.jpg ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../img/Dune.jpg");
-
-/***/ }),
-
 /***/ "./src/sass/main.scss":
 /*!****************************!*\
   !*** ./src/sass/main.scss ***!
@@ -120,6 +105,16 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./src/img/Dune.jpg":
+/*!**************************!*\
+  !*** ./src/img/Dune.jpg ***!
+  \**************************/
+/***/ (() => {
+
+throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n(Source code omitted for this binary file)");
 
 /***/ })
 
@@ -203,6 +198,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _clock_index__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_clock_index__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/main.scss */ "./src/sass/main.scss");
 /* harmony import */ var _img_Dune_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/Dune.jpg */ "./src/img/Dune.jpg");
+/* harmony import */ var _img_Dune_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_img_Dune_jpg__WEBPACK_IMPORTED_MODULE_2__);
  // Styles
 
  //images
