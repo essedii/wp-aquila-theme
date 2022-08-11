@@ -15,3 +15,43 @@
 @import "4-layouts/search-form";
 
 // Components
+
+
+
+html, 
+body {
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+.img-hover-zoom {
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+ 
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.2);
+  }
+  body { 
+    font-family: 'Lato', sans-serif !important;
+  }
+
+
+
+
+
+
+body{
+    background-color: blueviolet;
+}

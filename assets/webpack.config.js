@@ -15,10 +15,12 @@ const SRC_DIR = path.resolve(__dirname, "src");
 const entry = {
   main: JS_DIR + "/main.js",
   single: JS_DIR + "/single.js",
+  editor: JS_DIR + "/editor.js",
 };
 const output = {
   path: BUILD_DIR,
   filename: "js/[name].js",
+  clean: true,
 };
 
 const plugins = (argv) => [
