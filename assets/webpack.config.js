@@ -11,7 +11,7 @@ const IMG_DIR = path.resolve(__dirname, "src/img");
 const BUILD_DIR = path.resolve(__dirname, "build");
 const LIB_DIR = path.resolve(__dirname, "src/library");
 const SRC_DIR = path.resolve(__dirname, "src");
-// const CSS_DIR = path.resolve(__dirname, "src/library/js");
+
 const entry = {
   main: JS_DIR + "/main.js",
   single: JS_DIR + "/single.js",

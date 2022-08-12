@@ -41,7 +41,6 @@ class Assets
     {
         //Register Scripts.
         wp_register_script('main-js', AQUILA_BUILD_JS_URI . '/main.js', ['jquery'], filemtime(AQUILA_BUILD_JS_DIR_PATH . '/main.js'), true);
-
         wp_register_script('frontpage-js', AQUILA_BUILD_JS_URI . '/frontpage.js', ['jquery'], filemtime(AQUILA_BUILD_JS_DIR_PATH . 'frontpage.js'), true);
         wp_register_script('bootstrap-js', AQUILA_BUILD_LIB_URI . '/js/bootstrap.bundle.min.js', ['jquery'], false, true);
 
