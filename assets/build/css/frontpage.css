@@ -79,9 +79,9 @@
          url("..//[object%20Module]") format('truetype'), /* Safari, Android, iOS */
          url("..//[object%20Module]#Lato") format('svg'); /* Legacy iOS */
   }
-/*!***************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/single.scss ***!
-  \***************************************************************************************************************/
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/frontpage.scss ***!
+  \******************************************************************************************************************/
 /*---------------------------------
 		Colors Variables
 -----------------------------------*/
@@ -128,5 +128,14 @@ body {
       font-size: 18px;
       line-height: 1.43; } }
 
+.img-hover-zoom {
+  overflow: hidden; }
 
-/*# sourceMappingURL=single.css.map*/
+.img-hover-zoom img {
+  transition: transform 0.5s ease; }
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2); }
+
+
+/*# sourceMappingURL=frontpage.css.map*/
