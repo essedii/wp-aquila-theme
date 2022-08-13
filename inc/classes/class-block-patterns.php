@@ -30,11 +30,29 @@ class Block_Patterns {
 
 	public function register_block_patterns() {
 		if ( function_exists( 'register_block_pattern' ) ) {
+
+
+			/**
+			 * Cover Pattern
+			 */
+			$cover_content = $this->get_pattern_content( 'template-parts/patterns/cover' );
+
+			register_block_pattern(
+				'aquila/cover',
+				[
+					'title' => __( 'Aquila Cover', 'aquila' ),
+					'description' => __( 'Aquila Cover Block with image and text', 'aquila' ),
+					'categories' => [ 'cover' ],
+					'content' => $cover_content,
+				]
+			);
 			
 			/**
 			 * Two Column Pattern
 			 */
 			$two_columns_content = $this->get_pattern_content( 'template-parts/patterns/two-columns' );
+
+			
 
 			register_block_pattern(
 				'aquila/two-columns',

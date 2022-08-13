@@ -2,6 +2,48 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/img/journal.png":
+/*!*****************************!*\
+  !*** ./src/img/journal.png ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../../src/img/journal.png");
+
+/***/ }),
+
+/***/ "./src/img/photo.jpg":
+/*!***************************!*\
+  !*** ./src/img/photo.jpg ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../../src/img/photo.jpg");
+
+/***/ }),
+
+/***/ "./src/img/video.png":
+/*!***************************!*\
+  !*** ./src/img/video.png ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../../src/img/video.png");
+
+/***/ }),
+
 /***/ "./src/sass/frontpage.scss":
 /*!*********************************!*\
   !*** ./src/sass/frontpage.scss ***!
@@ -41,6 +83,23 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -61,7 +120,13 @@ var __webpack_exports__ = {};
   \*****************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_frontpage_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/frontpage.scss */ "./src/sass/frontpage.scss");
+/* harmony import */ var _img_journal_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/journal.png */ "./src/img/journal.png");
+/* harmony import */ var _img_photo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/photo.jpg */ "./src/img/photo.jpg");
+/* harmony import */ var _img_video_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/video.png */ "./src/img/video.png");
 // Styles
+
+
+
 
 })();
 
