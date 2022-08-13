@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Theme Sidebars.
  *
@@ -12,14 +13,16 @@ use AQUILA_THEME\Inc\Traits\Singleton;
 /**
  * Class Assets
  */
-class Sidebars {
+class Sidebars
+{
 
 	use Singleton;
 
 	/**
 	 * Construct method.
 	 */
-	protected function __construct() {
+	protected function __construct()
+	{
 		$this->setup_hooks();
 	}
 
@@ -28,28 +31,29 @@ class Sidebars {
 	 *
 	 * @return void
 	 */
-	protected function setup_hooks() {
+	protected function setup_hooks()
+	{
 
 		/**
 		 * Actions
 		 */
-		add_action( 'widgets_init', [ $this, 'register_sidebars' ] );		
-		add_action( 'widgets_init', [ $this, 'register_clock_widget' ] );
-
-	} 
+		add_action('widgets_init', [$this, 'register_sidebars']);
+		add_action('widgets_init', [$this, 'register_clock_widget']);
+	}
 
 	/**
 	 * Register widgets.
 	 *
 	 * @action widgets_init
 	 */
-	public function register_sidebars() {
+	public function register_sidebars()
+	{
 
 		register_sidebar(
 			[
-				'name'          => esc_html__( 'Sidebar', 'aquila' ),
+				'name'          => esc_html__('Sidebar', 'aquila'),
 				'id'            => 'sidebar-1',
-			
+
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '<h3 class="widget-title">',
@@ -59,7 +63,7 @@ class Sidebars {
 
 		register_sidebar(
 			[
-				'name'          => esc_html__( 'Footer', 'aquila' ),
+				'name'          => esc_html__('Footer', 'aquila'),
 				'id'            => 'sidebar-2',
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
@@ -67,13 +71,10 @@ class Sidebars {
 				'after_title'   => '</h3>',
 			]
 		);
-
 	}
 
-	public function register_clock_widget() {
+	public function register_clock_widget()
+	{
 		register_widget('AQUILA_THEME\Inc\Clock_widget');
 	}
-
-	
-
 }

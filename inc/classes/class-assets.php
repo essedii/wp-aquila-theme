@@ -1,7 +1,10 @@
 <?php
-//Enqueue theme assets. 
 
-// @package Aquila.
+/**
+ * Enqueue Theme Assets.
+ *
+ * @package Aquila
+ */
 
 namespace Aquila_Theme\Inc;
 

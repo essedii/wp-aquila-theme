@@ -1,7 +1,10 @@
 <?php
-// Main theme class.
 
-// @package Aquila.
+/**
+ * Main Theme Class.
+ *
+ * @package Aquila
+ */
 
 namespace AQUILA_THEME\Inc;
 
@@ -15,7 +18,8 @@ class AQUILA_THEME
     {
         //load class
         Assets::get_instance();
-        Menus:: get_instance();
+        Block_Patterns::get_instance();
+        Menus::get_instance();
         Meta_Boxes::get_instance();
         Sidebars::get_instance();
 
@@ -68,21 +72,23 @@ class AQUILA_THEME
             ]
         );
 
-     
 
-        add_theme_support( 'wp-block-styles' );
+
+        add_theme_support('wp-block-styles');
 
         add_theme_support('align-wide');
 
-        add_theme_support( 'editor-styles' );
+        add_theme_support('editor-styles');
 
-        add_editor_style( 'assets/build/css/editor.css' );
+        add_editor_style('assets/build/css/editor.css');
         global $content_width;
-        if( ! isset($content_width)) {
+        if (!isset($content_width)) {
             $content_width = 1234;
         }
 
-        add_theme_support( 'post-thumbnails' );
+        add_theme_support('post-thumbnails');
+
+        // remove_theme_support( 'core-block-patterns' );
 
         // add_image_size( 'featured-thumbnail', 350, 233, true );
     }

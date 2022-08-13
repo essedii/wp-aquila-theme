@@ -1,7 +1,10 @@
 <?php
-//Register meta boxes. 
 
-// @package Aquila.
+/**
+ * Register Meta Boxes.
+ *
+ * @package Aquila
+ */
 
 namespace Aquila_Theme\Inc;
 
