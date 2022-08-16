@@ -1,0 +1,91 @@
+@use "../util" as u;
+
+.grid {
+  &__frontpage {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px;
+    margin-left: auto;
+    min-height: 100%;
+    max-height: 100%;
+    &__left,
+    &__center,
+    &__right {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__img__left,
+    &__img__center,
+    &__img__right {
+      min-height: 100%;
+      max-width: 100%;
+      position: absolute;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    &__img__left {
+      scale: 1.1;
+    }
+
+    &__img__center {
+      bottom: 0px;
+    }
+    &__img__right {
+      scale: 1.2;
+    }
+    &__btn {
+      position: absolute;
+      z-index: 2;
+      min-width: 200px;
+      min-height: 50px;
+      border: none;
+      background: rgba(255, 247, 247, 0);
+      color: rgba(255, 255, 255, 0.863);
+      &:hover {
+        background: rgba(255, 247, 247, 0.726);
+        color: rgba(36, 36, 36, 0.863);
+        transition: background 0.5s, color 0.5s;
+      }
+    }
+
+    @include u.breakpoint(large) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+
+      &__left,
+      &__center,
+      &__right {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+      }
+
+      &__img__left,
+      &__img__center,
+      &__img__right {
+        min-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: 50% 50%;
+      }
+
+      &__img__left {
+        object-position: 65% 0%;
+      }
+      &__img__right {
+        object-position: left top;
+      }
+    }
+  }
+}

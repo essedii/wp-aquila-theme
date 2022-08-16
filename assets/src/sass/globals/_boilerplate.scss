@@ -1,0 +1,32 @@
+@use '../util' as u ;
+
+html,body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+//Wildcard selector
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  //Resets
+  padding: 0;
+  font-family: u.$font;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+
+}

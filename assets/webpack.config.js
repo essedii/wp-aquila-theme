@@ -31,6 +31,7 @@ const plugins = (argv) => [
 
   new MiniCssExtractPlugin({
     filename: "css/[name].css",
+
   }),
 
   new CopyPlugin({
@@ -54,6 +55,7 @@ module.exports = (env, argv) => ({
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        
       },
       {
         test: /\.(png|jpg|svg|jpeg|gif|ico)$/,

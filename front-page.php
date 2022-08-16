@@ -14,21 +14,35 @@ $image_center =  AQUILA_BUILD_IMG_URI . '/photo.jpg';
 $image_right =  AQUILA_BUILD_IMG_URI . '/journal.png';
 
 ?>
-    <div class=" d-flex row m-0" style="height: 100%; max-width: 100%; max-height: 100%;">
-        <?php 
-            echo'
-                <div class="col p-0 mh-auto bg-primary align-item-center  img-hover-zoom " style="width: 100%; height:100%; ">
-                    <img 
-                        src="' . $image_left . '" style=" min-height:100%; max-width:100%; object-fit: cover;  object-position: 50% 50%;">
-                            <!-- <button class="btn " style="position: absolute;"> video</button> -->
-                </div>';
-            echo'
-                <div class="col p-0 mh-auto bg-primary align-item-center  img-hover-zoom " style="width: 100%; height:100%; ">
-                    <img src="' . $image_center . '" style=" min-height:100%; max-width:100%; object-fit: cover;  object-position: 50% 50%;">
-                </div>';
-            echo'
-                <div class="col p-0 mh-auto bg-primary align-item-center  img-hover-zoom " style="width: 100%; height:100%; ">
-                    <img src="' . $image_right . '" style=" min-height:100%; max-width:100%; object-fit: cover;  object-position: 50% 50%;"> 
-                </div>'; 
-        ?>
-    </div>
+<?php
+echo '
+<div class="grid__frontpage">
+   <div class="grid__frontpage__left">
+      <img src="' . $image_left . '" class="grid__frontpage__img__left">
+      <button class="grid__frontpage__btn">V I D E O
+
+      </button>
+   </div>
+   <div class="grid__frontpage__center">
+      <img src="' . $image_center . '" class="grid__frontpage__img__center">
+      <button class="grid__frontpage__btn">P H O T O G R A P H Y
+
+      </button>
+   </div>
+
+   <div class="grid__frontpage__right">
+      <button class="grid__frontpage__btn">J O U R N A L
+
+      </button>
+
+      <img src="' . $image_right . '" class="grid__frontpage__img__right">
+
+   </div>
+</div>';      ?>
+
+<!-- <div style="background-color: whitesmoke; min-height: 100%; max-height: 100%; display: grid;  grid-template-rows:  1fr 1fr 1fr;">
+   <div style="background-color: green ;">1</div>
+<div style="background-color: white; height: 300px ;">2</div>
+<div style="background-color:  red;">3</div>
+</div> -->
+
