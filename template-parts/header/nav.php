@@ -73,7 +73,7 @@ $header_menus = wp_get_nav_menu_items($header_menu_id);
      <?php
      }
      ?>
-
+    <?php get_search_form(); ?>
    </div>
  </div>
 

@@ -3,6 +3,7 @@
 // @package aquila
 // include_once'header.php';
 get_header();
+echo 'Index';
 ?>
 <div id="primary">
     <main id="main" class="site-main mt-5" role='main'>
