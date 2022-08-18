@@ -28,7 +28,7 @@
           url("..//[object%20Module]#OpenSans") format('svg'); /* Legacy iOS */
    }
 /*!***************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/single.scss ***!
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/videos.scss ***!
   \***************************************************************************************************************/
 html, body {
   height: 100%;
@@ -156,4 +156,4 @@ a:active {
   }
 }
 
-/*# sourceMappingURL=single.css.map*/
+/*# sourceMappingURL=videos.css.map*/

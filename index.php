@@ -10,8 +10,10 @@ echo 'Index';
         <div class="container">
             <div class="row ">
                 <div class="col-lg-8 col-md-8 col-sm-12 ">
+                    <div>helloworldindex</div>
                     <?php if (have_posts()) { ?>
                         <div class="container">
+                        <div>Hello World index</div>
                             <?php
                             if (is_home() && !is_front_page()) {
                             ?>

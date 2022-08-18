@@ -21,6 +21,8 @@ class AQUILA_THEME
         Block_Patterns::get_instance();
         Menus::get_instance();
         Meta_Boxes::get_instance();
+        Register_Post_Types::get_instance();
+        Register_Taxonomies::get_instance();
         Sidebars::get_instance();
 
 
