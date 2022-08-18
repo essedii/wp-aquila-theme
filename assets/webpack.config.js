@@ -14,12 +14,7 @@ const SRC_DIR = path.resolve(__dirname, "src");
 
 const entry = {
   main: JS_DIR + "/main.js",
-  single: JS_DIR + "/single.js",
-  frontpage: JS_DIR + "/frontpage.js",
-  editor: JS_DIR + "/editor.js",
-  photos: JS_DIR + "/photos.js",
-  videos: JS_DIR + "/videos.js",
-  archive_photo: JS_DIR + "/archive_photo.js",
+
 };
 const output = {
   path: BUILD_DIR,

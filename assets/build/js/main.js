@@ -1,97 +1,46 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/clock/index.js":
-/*!*******************************!*\
-  !*** ./src/js/clock/index.js ***!
-  \*******************************/
-/***/ (() => {
+/***/ "./src/img/journal.png":
+/*!*****************************!*\
+  !*** ./src/img/journal.png ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../../src/img/journal.png");
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+/***/ }),
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+/***/ "./src/img/photo.jpg":
+/*!***************************!*\
+  !*** ./src/img/photo.jpg ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-(function ($) {
-  /**
-   * Clock Class.
-   */
-  var Clock = /*#__PURE__*/function () {
-    /**
-     * Constructor
-     */
-    function Clock() {
-      _classCallCheck(this, Clock);
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../../src/img/photo.jpg");
 
-      this.initializeClock();
-    }
-    /**
-     * initializeClock
-     */
+/***/ }),
 
+/***/ "./src/img/video.png":
+/*!***************************!*\
+  !*** ./src/img/video.png ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-    _createClass(Clock, [{
-      key: "initializeClock",
-      value: function initializeClock() {
-        var _this = this;
-
-        setInterval(function () {
-          return _this.time();
-        }, 1000);
-      }
-      /**
-       * Numpad
-       *
-       * @param {String} str String
-       *
-       * @return {string} String
-       */
-
-    }, {
-      key: "numPad",
-      value: function numPad(str) {
-        var cStr = str.toString();
-
-        if (2 > cStr.length) {
-          str = 0 + cStr;
-        }
-
-        return str;
-      }
-      /**
-       * Time
-       */
-
-    }, {
-      key: "time",
-      value: function time() {
-        var currDate = new Date();
-        var currSec = currDate.getSeconds();
-        var currMin = currDate.getMinutes();
-        var curr24Hr = currDate.getHours();
-        var ampm = 12 <= curr24Hr ? 'pm' : 'am';
-        var currHr = curr24Hr % 12;
-        currHr = currHr ? currHr : 12;
-        var stringTime = currHr + ':' + this.numPad(currMin) + ':' + this.numPad(currSec);
-        var timeEmojiEl = $('#time-emoji');
-
-        if (5 <= curr24Hr && 17 >= curr24Hr) {
-          timeEmojiEl.text('🌞');
-        } else {
-          timeEmojiEl.text('🌜');
-        }
-
-        $('#time').text(stringTime);
-        $('#ampm').text(ampm);
-      }
-    }]);
-
-    return Clock;
-  }();
-
-  new Clock();
-})(jQuery);
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("../../src/img/video.png");
 
 /***/ }),
 
@@ -101,7 +50,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -135,18 +83,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -177,17 +113,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _clock_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clock/index */ "./src/js/clock/index.js");
-/* harmony import */ var _clock_index__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_clock_index__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sass/main.scss */ "./src/sass/main.scss");
- // Styles
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/main.scss */ "./src/sass/main.scss");
+/* harmony import */ var _img_journal_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../img/journal.png */ "./src/img/journal.png");
+/* harmony import */ var _img_photo_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../img/photo.jpg */ "./src/img/photo.jpg");
+/* harmony import */ var _img_video_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../img/video.png */ "./src/img/video.png");
+
+
 
 
 })();

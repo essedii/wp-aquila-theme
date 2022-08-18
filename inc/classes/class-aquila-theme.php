@@ -148,7 +148,7 @@ class AQUILA_THEME
          *
          * @see https://developer.wordpress.org/block-editor/developers/themes/theme-support/#editor-styles
          */
-        add_theme_support('editor-styles');
+        // add_theme_support('editor-styles');
         /**
          *
          * Path to our custom editor style.
@@ -162,7 +162,7 @@ class AQUILA_THEME
          * @see add_editor_style(
          * @link https://developer.wordpress.org/reference/functions/add_editor_style/
          */
-        add_editor_style('assets/build/css/editor.css');
+        // add_editor_style('assets/build/css/editor.css');
 
         global $content_width;
         if (!isset($content_width)) {

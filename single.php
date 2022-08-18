@@ -29,6 +29,7 @@ get_header();
 
                 while (have_posts()) : the_post();
                 ?>
+              
                     <div class="col-lg-4 col-md-6 col-sm-12">
                         <?php
                         get_template_part('template-parts/content'); {
