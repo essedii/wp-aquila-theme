@@ -29,12 +29,15 @@ get_header();
 					?>
 				</header><!-- .page-header -->
 				<div class="site-content">
-					<div class="row">
+					<div class="d-flex flex-row">
 						<?php
 						if ( have_posts() ) :
 							while ( have_posts() ) : the_post();
-								get_template_part( 'template-parts/content', '', [ 'container_classes' => 'col-lg-4 col-md-6 col-sm-12 pb-4' ] );
-							endwhile;
+							?>
+							<div class="m-3">
+							<?php the_content(); 	?>
+							</div>
+							<?php				endwhile;
 						else :
 							get_template_part( 'template-parts/content-none' );
 						endif;

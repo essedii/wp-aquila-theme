@@ -8,11 +8,10 @@
 get_header();
 
 ?>
-<div>Hello World</div>
+
 	<div id="primary">
 		<main id="main" class="site-main my-5" role="main">
 			<div class="container">
-            <div>Hello World archive</div>
 				<header class="page-header">
 					<?php
 					if ( ! empty( single_term_title( '', false ) ) ) {
@@ -28,7 +27,7 @@ get_header();
 					?>
 				</header><!-- .page-header -->
 				<div class="site-content">
-					<div class="row">
+					<div class="d-flex flex-row">
 					<div>
                     <?php
                     	
@@ -39,7 +38,11 @@ get_header();
 						<?php
 						if ( have_posts() ) :
 							while ( have_posts() ) : the_post();
-							the_content();
+							?>
+							<div class="m-3">
+							<?php the_content(); 	?>
+							</div>
+							<?php
 							endwhile;
 						else :
 							get_template_part( 'template-parts/content-none' );
