@@ -15,9 +15,9 @@
 
 
 	<div id="primary">
-		<main id="main" class="site-main mt-5" role="main">
-			<div class="container">
-				<header class="mb-5">
+		<main id="main" class="site-main" role="main">
+			<div class="container  pb-5">
+				<header class="">
 					<h1 class="page-title"> <?php echo $wp_query->found_posts; ?>
 						<?php _e( 'Search Results Found For', 'locale' ); ?>: "<?php the_search_query(); ?>"
 					</h1>

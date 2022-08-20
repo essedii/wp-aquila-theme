@@ -9,11 +9,11 @@ get_header();
 
 
 ?>
-<div>Hello World</div>
-	<div id="primary">
-		<main id="main" class="site-main my-5" role="main">
-			<div class="container">
-            <div>Hello World archive</div>
+
+	<div id="primary" style="">
+		<main id="main" class="site-main my-5" role="main" style="" >
+			<div class="container" style="">
+
 				<header class="page-header">
 					<?php
 					if ( ! empty( single_term_title( '', false ) ) ) {
@@ -28,8 +28,8 @@ get_header();
 					}
 					?>
 				</header><!-- .page-header -->
-				<div class="site-content">
-					<div class="d-flex flex-row">
+				<div class="site-content"  style="">
+					<div class="d-flex flex-row" style="">
 						<?php
 						if ( have_posts() ) :
 							while ( have_posts() ) : the_post();
