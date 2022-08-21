@@ -9,19 +9,20 @@
   
       $(".slider").slick({
         autoplay: false,
-        infinite: true,
+    
         vertical: false,
         dots: true,
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        customPaging: function(slider, i) {},
+ 
         responsive: [{
           breakpoint: 1024,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: false,
+            dots: true,
             vertical: false,
           },
         }, {
@@ -29,7 +30,8 @@
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: false,
+            dots: true,
             vertical: false,
           },
         }, {
@@ -37,7 +39,8 @@
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows:false,
+               dots: true,
             vertical: false,
           },
         }]

@@ -12,20 +12,20 @@ $args = [
 'videos', 'update_post_meta_cache' => false, 'update_post_term_cache' => false,
 ]; $post_query = new \WP_Query($args); ?>
 
-<div class="slider slider__video " style="max-width: 100%">
+<div class="slider slider__video " >
   <?php
 		if (have_posts()) :
 			while (have_posts()) : the_post();
 		?>
-  <div style="max-width: 100%">
+  <div>
     <!-- <button class="left" style="background: none; border: none">
 			<i class="fa fa-chevron-left fa-2xl m-2"></i>
 		</button> -->
   
-      <div style="max-width: 100%">
+      <div >
         <?php get_template_part('template-parts/video-content') 	?>
       </div>
-      <div class="a" style="max-width: 100%"><?php the_content() 	?></div>
+      <div  style="width: 100%"><?php the_content() 	?></div>
 
 
     <!-- <button class="right" style="background: none; border: none"><i class="fa fa-chevron-right fa-2xl m-2"></i></button> -->

@@ -26,19 +26,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       value: function initiateCarousel() {
         $(".slider").slick({
           autoplay: false,
-          infinite: true,
           vertical: false,
           dots: true,
           arrows: true,
           slidesToShow: 1,
           slidesToScroll: 1,
-          customPaging: function customPaging(slider, i) {},
           responsive: [{
             breakpoint: 1024,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: true,
+              arrows: false,
+              dots: true,
               vertical: false
             }
           }, {
@@ -46,7 +45,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: true,
+              arrows: false,
+              dots: true,
               vertical: false
             }
           }, {
@@ -54,7 +54,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: true,
+              arrows: false,
+              dots: true,
               vertical: false
             }
           }]
