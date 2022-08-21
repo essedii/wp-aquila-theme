@@ -72,6 +72,11 @@ input:focus {
   outline: none;
 }
 
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
+}
+
 h1,
 h2,
 h3 {
@@ -171,6 +176,12 @@ a:active {
     object-position: left top;
   }
 }
+@media (min-width: 56.25em) {
+  .grid__archive__photo {
+    display: grid;
+  }
+}
+
 .footer {
   align-items: center;
   justify-content: center;

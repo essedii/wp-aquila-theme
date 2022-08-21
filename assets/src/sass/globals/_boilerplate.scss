@@ -69,7 +69,7 @@ input:focus {
   outline: none;
 }
 
-// .slick-prev:before,
-// .slick-next:before {
-//   color: rgb(0, 0, 0);
-// }
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
+}

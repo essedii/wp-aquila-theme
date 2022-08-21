@@ -99,6 +99,8 @@
     }
     &__photo{
       @include u.breakpoint(large) {
+        display: grid;
+        
         
       }
     }

@@ -21,8 +21,8 @@
     font-size: 0;
     line-height: 0;
 
-    position: absolute;
-    top: 50%;
+    position:absolute;
+    bottom: 50%;
 
     display: block;
 
@@ -35,7 +35,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: black!important;
     border: none;
     outline: none;
     background: transparent;
@@ -70,7 +70,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

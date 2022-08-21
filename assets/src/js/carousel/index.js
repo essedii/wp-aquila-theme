@@ -9,10 +9,11 @@
   
       $(".slider").slick({
         autoplay: false,
-    
         vertical: false,
         dots: true,
         arrows: true,
+
+    
         slidesToShow: 1,
         slidesToScroll: 1,
  
