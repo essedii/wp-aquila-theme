@@ -11,7 +11,7 @@ get_header();
 ?>
 
 	<div id="primary" style="">
-		<main id="main" class="site-main my-5" role="main" style="" >
+		<main id="main" class="site-main" role="main" style="" >
 			<div class="container" style="">
 
 				<header class="page-header">
