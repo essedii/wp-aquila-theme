@@ -1,14 +1,13 @@
 @use '../util' as u ;
 
 
+// html {
+//   height: 100%;
 
-html {
-  height: 100%;
-  // box-sizing: border-box;
-  font-size: 100%;
+//   font-size: 100%;
 
-  margin: 0;
-}
+//   margin: 0;
+// }
 
 
 //Wildcard selector
@@ -18,21 +17,20 @@ html {
 //   box-sizing: inherit;
 // }
 
-body {
-  //Resets
-  height: 100%;
+// body {
 
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  font-family: u.$font;
-  background-color: var(--background-color);
-  color: var(--text-color);
+//   height: 100%;
 
-//   overflow-y: hidden; 
-// overflow-x: hidden; 
+//   display: flex;
+//   flex-direction: column;
+//   padding: 0;
+//   font-family: u.$font;
+//   background-color: var(--background-color);
+//   color: var(--text-color);
 
-}
+
+
+// }
 
 
 
@@ -49,27 +47,38 @@ svg{
   max-height: 24px;
 }
 
-.site{
-  display: grid;
-  grid-template-columns: 1fr ;
-  height: 100%;
-  // min-height: 100%
+// .site{
+//   display: grid;
+//   grid-template-columns: 1fr ;
+//   height: 100%;
+
+// }
+
+// .site-content{
+
+//   display: grid;
+//   grid-template-columns: 1fr  ;
+
+
+
+// }
+video{
+  object-fit: contain!important;
 }
 
-.site-content{
-  // height: 100%;
-  display: grid;
-  grid-template-columns: 1fr  ;
-  // grid-auto-rows: 2fr auto ;
-  // grid-gap: 10px;
+figure{
+  max-width: 100%;
+}
 
-
-  // place-content: space-between center;
+.wp-block-video{
+  max-width: 100%;
 }
 
 textarea:focus, input:focus{
   outline: none;
 }
+
+
 
 .slick-prev:before, .slick-next:before{
   color:rgb(0, 0, 0);

@@ -91,4 +91,16 @@
       }
     }
   }
+  &__archive{
+    &__video{
+      @include u.breakpoint(large) {
+
+      }
+    }
+    &__photo{
+      @include u.breakpoint(large) {
+        
+      }
+    }
+  }
 }

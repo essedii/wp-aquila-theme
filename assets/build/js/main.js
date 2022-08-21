@@ -25,16 +25,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       key: "initiateCarousel",
       value: function initiateCarousel() {
         $(".slider").slick({
-          nextArrow: '<button class="right" style="background: none; border: none"><i class="fa fa-chevron-right fa-2xl m-2"></i></button>',
-          prevArrow: '	<button class="left" style="background: none; border: none"><i class="fa fa-chevron-left fa-2xl m-2"></i></button>' // arrows: false
-          // })
-          // $('.left').click(function(){
-          //   $('.slider').slick('slickPrev');
-          // })
-          // $('.right').click(function(){
-          //   $('.slider').slick('slickNext');
-          // })
-
+          autoplay: false,
+          infinite: true,
+          vertical: false,
+          dots: true,
+          arrows: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          customPaging: function customPaging(slider, i) {},
+          responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              vertical: false
+            }
+          }, {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              vertical: false
+            }
+          }, {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              vertical: false
+            }
+          }]
         });
       }
     }]);
