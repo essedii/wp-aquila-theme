@@ -1,56 +1,23 @@
 <?php
+
 /**
- * Archive Page template file.
+ * Archive Photos template file.
  *
  * @package Aquila
  */
 
 get_header();
-
-
 ?>
+<div class="" style="width: 50%; justify-content: center; margin: auto">
+	<div style="margin: auto; margin-top: 50px">
+		<?php
+		get_template_part('template-parts/components/photos-carousel');
+		?>
 
-	<div id="primary" style="">
-		<main id="main" class="site-main" role="main" style="" >
-			<div class="container" style="">
-
-				<header class="page-header">
-					<?php
-					if ( ! empty( single_term_title( '', false ) ) ) {
-						printf(
-							'<h1 class="page-title">%s</h1>',
-							single_term_title( '', false )
-						);
-					}
-
-					if ( ! empty( get_the_archive_description() ) ) {
-						the_archive_description( '<div class="archive-description">', '</div>' );
-					}
-					?>
-				</header><!-- .page-header -->
-				<div class="site-content"  style="">
-					<div class="d-flex flex-row" style="">
-						<?php
-						if ( have_posts() ) :
-							while ( have_posts() ) : the_post();
-							?>
-							<div class="m-3">
-							<?php the_content(); 	?>
-							</div>
-							<?php				endwhile;
-						else :
-							get_template_part( 'template-parts/content-none' );
-						endif;
-						?>
-					</div>
-					<div>
-						<?php aquila_pagination(); ?>
-					</div>
-				</div>
-			</div>
-		</main>
 	</div>
 
+
+</div>
 <?php
 
 get_footer();

@@ -4,51 +4,90 @@
       this.initiateCarousel();
     }
     initiateCarousel() {
-      
-
-  
       $(".slider").slick({
         autoplay: false,
         vertical: false,
         dots: true,
         arrows: true,
 
-    
         slidesToShow: 1,
         slidesToScroll: 1,
- 
-        responsive: [{
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            vertical: false,
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true,
+              vertical: false,
+            },
           },
-        }, {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: true,
-            vertical: false,
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true,
+              vertical: false,
+            },
           },
-        }, {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows:false,
-               dots: true,
-            vertical: false,
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true,
+              vertical: false,
+            },
           },
-        }]
-  })
-}
-}
+        ],
+      });
+      $('.multiple-items').slick({
+        infinite: false,
+        arrows:true,
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true,
+              vertical: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true,
+              vertical: false,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              dots: true,
+              vertical: false,
+            },
+          },
+        ],
+      });
+        
+    }
+  }
 
   new SlickCarousel();
 })(jQuery);
-

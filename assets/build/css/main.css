@@ -52,6 +52,11 @@ body {
   color: var(--text-color);
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 svg {
   display: block;
   margin: 0 auto;
@@ -61,6 +66,18 @@ svg {
 
 figure {
   margin: 0 !important;
+}
+
+footer {
+  background-color: aquamarine;
+  position: absolute;
+  bottom: -60px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  display: flex;
+  margin-top: auto;
+  min-height: 60px;
 }
 
 .wp-block-video {
@@ -110,15 +127,14 @@ a:active {
   max-height: 100%;
 }
 .grid__frontpage__left, .grid__frontpage__center, .grid__frontpage__right {
-  overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .grid__frontpage__img__left, .grid__frontpage__img__center, .grid__frontpage__img__right {
-  min-height: 100%;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
   position: absolute;
   object-fit: cover;
   object-position: bottom;
@@ -177,18 +193,15 @@ a:active {
   }
 }
 @media (min-width: 56.25em) {
-  .grid__archive__photo {
-    display: grid;
+  .grid__archive__videos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
-
-.footer {
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  display: flex;
-  margin-top: auto;
-  min-height: 60px;
+@media (min-width: 56.25em) {
+  .grid__archive__photos {
+    display: grid;
+  }
 }
 
 /*# sourceMappingURL=main.css.map*/

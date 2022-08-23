@@ -8,7 +8,7 @@
 ?>
 
 
-<footer id="site-footer" class="footer bg-light">
+<footer id="site-footer" class=" ">
 	
 		<div class="">
 			<section class="">

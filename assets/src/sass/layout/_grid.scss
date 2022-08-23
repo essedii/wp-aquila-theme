@@ -13,7 +13,6 @@
     &__left,
     &__center,
     &__right {
-      overflow: hidden;
       position: relative;
       display: flex;
       align-items: center;
@@ -23,8 +22,10 @@
     &__img__left,
     &__img__center,
     &__img__right {
-      min-height: 100%;
-      max-width: 100%;
+  
+     height: 100%;
+    
+     width: 100%;
       position: absolute;
       object-fit: cover;
       object-position: bottom;
@@ -92,12 +93,14 @@
     }
   }
   &__archive{
-    &__video{
+    &__videos{
       @include u.breakpoint(large) {
-
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+  
       }
     }
-    &__photo{
+    &__photos{
       @include u.breakpoint(large) {
         display: grid;
         

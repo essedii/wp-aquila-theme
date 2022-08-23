@@ -2,9 +2,7 @@
 
 html {
   height: 100%;
-
   font-size: 100%;
-
   margin: 0;
 }
 
@@ -25,10 +23,10 @@ body {
   color: var(--text-color);
 }
 
-// ul {
-//   padding: 0;
-//   margin: 0;
-// }
+ul {
+  padding: 0;
+  margin: 0;
+}
 
 svg {
   display: block;
@@ -36,9 +34,26 @@ svg {
   text-align: center;
   max-height: 24px;
 }
-figure{
-  margin: 0!important;
+figure {
+  margin: 0 !important;
 }
+
+
+footer {
+  background-color: aquamarine;
+ 
+position: absolute;
+bottom: -60px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  display: flex;
+  margin-top: auto;
+  min-height: 60px;
+  
+  
+  }
+  
 // .site{
 //   display: grid;
 //   grid-template-columns: 1fr ;
