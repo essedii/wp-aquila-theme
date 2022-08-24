@@ -1,0 +1,82 @@
+@use "../util" as u;
+ul.navbar-nav {
+  // text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: start;
+
+
+  // margin-top: 10px;
+
+  z-index: 2;
+
+
+  @include u.breakpoint(large) {
+    // justify-content: center;
+  }
+
+  &__dropdown {
+    margin:10px 10px 10px ;
+    // margin-left: 5px;
+    &__toggler {
+      position: relative;
+      z-index: 3;
+      // marging: 0 auto;
+    }
+    &__menu {
+      left:0;
+        right:0;
+
+      &__list {
+
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left:0;
+        right:0;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        // text-align: end;
+        // margin: 40px auto;
+        // @include u.breakpoint(large) {
+        //   margin: 0 auto;
+        // }
+      }
+    }
+  }
+
+  &__search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin:10px 10px 10px ;
+
+    &__input {
+      max-height: 20px;
+     
+      // border-color: rgb(171, 184, 195);
+    }
+    &__form {
+      position: absolute;
+
+      right: 0;
+
+      margin: auto;
+    }
+
+    &__btn {
+      margin: 0 auto;
+      
+
+      @include u.breakpoint(large) {
+        position: absolute;
+
+        margin: 0 auto;
+      }
+    }
+  
+  }
+}

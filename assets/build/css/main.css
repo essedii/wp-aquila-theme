@@ -68,6 +68,15 @@ figure {
   margin: 0 !important;
 }
 
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+a.nav-link {
+  width: 100%;
+}
+
 footer {
   background-color: aquamarine;
   position: absolute;
@@ -116,6 +125,7 @@ a:active {
 :root {
   --background-color: rgb(255, 255, 255);
   --text-color: rgb(0, 0, 0);
+  --secondary: rgb(0,0,0);
 }
 
 .grid__frontpage {
@@ -203,6 +213,64 @@ a:active {
   .grid__archive__photos {
     display: grid;
   }
+}
+
+.nav {
+  display: flex;
+  justify-content: start;
+  z-index: 2;
+}
+.nav__dropdown {
+  margin: 10px 10px 10px;
+}
+.nav__dropdown__toggler {
+  position: relative;
+  z-index: 3;
+}
+.nav__dropdown__menu {
+  left: 0;
+  right: 0;
+}
+.nav__dropdown__menu__list {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+.nav__search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 10px 10px 10px;
+}
+.nav__search__input {
+  max-height: 20px;
+}
+.nav__search__form {
+  position: absolute;
+  right: 0;
+  margin: auto;
+}
+.nav__search__btn {
+  margin: 0 auto;
+}
+@media (min-width: 56.25em) {
+  .nav__search__btn {
+    position: absolute;
+    margin: 0 auto;
+  }
+}
+
+.search__form {
+  margin: 0;
+  border: none;
+}
+.search__form__btn {
+  background: none;
 }
 
 /*# sourceMappingURL=main.css.map*/

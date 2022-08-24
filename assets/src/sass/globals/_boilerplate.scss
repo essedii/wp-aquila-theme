@@ -37,7 +37,14 @@ svg {
 figure {
   margin: 0 !important;
 }
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
 
+a.nav-link{
+  width: 100%;
+}
 
 footer {
   background-color: aquamarine;
